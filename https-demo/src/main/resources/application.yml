@@ -1,0 +1,17 @@
+
+server:
+  port: 2023
+  ssl:
+    enabled: true
+    key-alias: https-demo
+    key-store: classpath:keystore.jks
+#    key-store: A:\Workspace\keystore_truststore_demos\https-demo\src\main\resources\keystore.jks
+    key-store-password: password
+    key-store-type: JKS
+    key-password: password
+
+# To create a JKS file (Self Signed Certificate)
+# keytool -genkey -alias https-demo -storetype JKS -keyalg RSA -keysize 2048 -validity 365 -keystore keystore.jks -ext san=dns:localhost
+
+# To create a certificate from the jks file
+# keytool -export -keystore keystore.jks -alias https-demo -file https-demo-cert.crt
