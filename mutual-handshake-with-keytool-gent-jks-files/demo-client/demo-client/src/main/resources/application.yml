@@ -1,0 +1,7 @@
+
+server:
+  port: 2001
+
+#Setup these in VMOptions
+#-Djavax.net.ssl.trustStore=A:\Workspace\keystore_truststore_demos\mutual-handshake-with-keytool-gent-jks-files\demo-client\demo-client\src\main\resources\client-truststore.jks
+#-Djavax.net.ssl.trustStorePassword=password

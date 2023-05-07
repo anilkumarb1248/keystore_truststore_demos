@@ -1,0 +1,10 @@
+
+server:
+  port: 2000
+  ssl:
+    enabled: true
+    key-alias: demo-server
+    key-store: classpath:server-keystore.jks
+    key-store-password: password
+    key-store-type: JKS
+    key-password: password
