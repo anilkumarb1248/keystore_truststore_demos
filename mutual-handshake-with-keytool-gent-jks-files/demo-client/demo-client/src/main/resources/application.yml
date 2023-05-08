@@ -1,6 +1,18 @@
 
 server:
   port: 2001
+  ssl:
+    enabled: true
+    client-auth: need
+    key-alias: demo-client
+    key-store: classpath:client-keystore.jks
+    key-store-password: password
+    key-store-type: JKS
+    key-password: password
+    trust-store: classpath:client-truststore.jks
+    trust-store-password: password
+    trust-store-type: JKS
+
 
 #Setup these in VMOptions
 #-Djavax.net.ssl.trustStore=A:\Workspace\keystore_truststore_demos\mutual-handshake-with-keytool-gent-jks-files\demo-client\demo-client\src\main\resources\client-truststore.jks
