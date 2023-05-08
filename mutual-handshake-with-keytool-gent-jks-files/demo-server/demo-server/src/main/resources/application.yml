@@ -3,8 +3,12 @@ server:
   port: 2000
   ssl:
     enabled: true
+    client-auth: need
     key-alias: demo-server
     key-store: classpath:server-keystore.jks
     key-store-password: password
     key-store-type: JKS
     key-password: password
+    trust-store: classpath:server-truststore.jks
+    trust-store-password: password
+    trust-store-type: JKS
